@@ -9,14 +9,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+Input color codes below. for RGB and LSL, use comma-separated values (Red,Grn,Blu).
     <div class="container">
         <div class="wrapper">
             <label for="rgb">RGB</label>
-            <input type="text" id="rgb" oninput="toHex()" placeholder="Enter RGB Value">
+            <input type="text" id="rgb" oninput="fromRgb()" placeholder="Enter RGB Value">
         </div>
         <div class="wrapper">
             <label for="hex">HEX</label>
-            <input type="text" id="hex" oninput="toRgb()" placeholder="Enter Hex Value">
+            <input type="text" id="hex" oninput="fromHex()" placeholder="Enter Hex Value">
+        </div>
+        <div class="wrapper">
+            <label for="lsl">LSL</label>
+            <input type="text" id="lsl" oninput="fromLsl()" placeholder="Enter LSL Value">
+        </div>
+        <div class="wrapper">
+            <label for="hsl">HSL</label>
+            <input type="text" id="hsl" oninput="fromHsl()" placeholder="Enter HSL Value">
         </div>
     </div>
     <!--Script-->
